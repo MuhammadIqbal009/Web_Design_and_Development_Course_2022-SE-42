@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxes</title>
+    <style>
+      .Container {
+        display: grid;
+        grid-template-rows: 100px 200px 100px 200px;
+        grid-template-columns: 200px 400px 400px;
+        place-content: center;
+        gap: 5px;
+      }
+      .box1 {
+        background-color: rgb(0, 217, 255);
+        display: grid;
+        place-content: center;
+        grid-row-start: 1;
+        grid-row-end: ;
+        grid-column-start: ;
+        grid-column-end: ;
+      }
+      .box2 {
+        background-color: aqua;
+        display: grid;
+        place-content: center;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .box3 {
+        background-color: rgb(255, 157, 0);
+        display: grid;
+        place-content: center;
+      }
+      .box4 {
+        background-color: red;
+        display: grid;
+        place-content: center;
+      }
+      .box5 {
+        background-color: green;
+        display: grid;
+        place-content: center;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: ;
+      }
+      .box6 {
+        background-color: rgb(0, 217, 255);
+        display: grid;
+        place-content: center;
+      }
+      .box7 {
+        background-color: rgb(0, 217, 255);
+        display: grid;
+        place-content: center;
+      }
+      .box8 {
+        background-color: rgb(0, 217, 255);
+        display: grid;
+        place-content: center;
+      }
+      .box9 {
+        background-color: rgb(0, 217, 255);
+        display: grid;
+        place-content: center;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <div class="box4">box4</div>
+      <div class="box5">box5</div>
+      <div class="box6">box6</div>
+      <div class="box7">box7</div>
+      <div class="box8">box8</div>
+      <div class="box9">box9</div>
+    </div>
+  </body>
+</html>
