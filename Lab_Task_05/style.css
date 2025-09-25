@@ -1,0 +1,249 @@
+@media (max-width : 400px) {
+
+    .Project {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .project-content {
+        width: 90vw;
+        padding-right: 3vw;
+    }
+
+    .project-pic {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .Project img {
+        width: 99vw;
+    }
+
+    .quotation {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .quotation-content {
+        width: 90vw;
+        padding-right: 3vw;
+    }
+
+    .quotation-pic {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .quotation img {
+        width: 99vw;
+    }
+
+    .administration {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .administration-content {
+        width: 90vw;
+        padding-right: 3vw;
+    }
+
+    .administration-pic {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .administration img {
+        width: 99vw;
+    }
+
+    .client {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+    }
+
+    .client-content {
+        width: 90vw;
+        padding-right: 3vw;
+    }
+
+    .client-pic {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .client img {
+        width: 99vw;
+    }
+
+    .invoice {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+    }
+
+    .invoice-content {
+        width: 90vw;
+        padding-right: 3vw;
+    }
+
+    .invoice-pic {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .invoice img {
+        width: 99vw;
+    }
+
+    .messaging {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+    }
+
+    .messaging-content {
+        width: 90vw;
+        padding-right: 3vw;
+    }
+
+    .messaging-pic {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .messaging img {
+        width: 99vw;
+    }
+}
+
+@media (max-width : 800px) {
+
+    .menu-links {
+        top: 42px;
+        right: 0px;
+    }
+
+    .menu {
+        justify-content: space-around;
+    }
+
+    .toggle-menu {
+        opacity: 1;
+    }
+
+    .Menu_links li:nth-child(-n+4) {
+        display: none;
+    }
+}
+
+@media (max-width : 600px) {
+
+    .menu-links {
+        top: 30px;
+        right: 0px;
+    }
+
+    .project-content h3 {
+        line-height: 15px;
+    }
+
+    .project-content h2 {
+        line-height: 30px;
+    }
+
+    .project-content ul {
+        margin-bottom: 10px;
+    }
+
+    .project-content ul li {
+        line-height: 24px;
+    }
+
+    .client-content h3 {
+        line-height: 15px;
+    }
+
+    .client-content h2 {
+        line-height: 30px;
+    }
+
+    .client-content ul {
+        margin-bottom: 10px;
+    }
+
+    .client-content ul li {
+        line-height: 24px;
+    }
+
+    .quotation-content h3 {
+        line-height: 15px;
+    }
+
+    .quotation-content h2 {
+        line-height: 30px;
+    }
+
+    .quotation-content ul {
+        margin-bottom: 10px;
+    }
+
+    .quotation-content ul li {
+        line-height: 24px;
+    }
+
+    .invoice-content h3 {
+        line-height: 15px;
+    }
+
+    .invoice-content h2 {
+        line-height: 30px;
+    }
+
+    .invoice-content ul {
+        margin-bottom: 10px;
+    }
+
+    .invoice-content ul li {
+        line-height: 24px;
+    }
+
+    .administration-content h3 {
+        line-height: 15px;
+    }
+
+    .administration-content h2 {
+        line-height: 30px;
+    }
+
+    .administration-content ul {
+        margin-bottom: 10px;
+    }
+
+    .administration-content ul li {
+        line-height: 24px;
+    }
+
+    .messaging-content h3 {
+        line-height: 15px;
+    }
+
+    .messaging-content h2 {
+        line-height: 30px;
+    }
+
+    .messaging-content ul {
+        margin-bottom: 10px;
+    }
+
+    .messaging-content ul li {
+        line-height: 24px;
+    }
+
+    .footer-logos {
+        gap: 5vw;
+    }
+
+    .animated-waves {
+        top: 5vh;
+    }
+
+}
