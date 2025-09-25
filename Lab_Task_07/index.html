@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katora Shop Page</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Offer Bar -->
+    <div class="offer-bar text-center position-relative">
+      Get <strong>UPTO 40% OFF</strong> on your 1st order
+      <a href="#" class="text-white text-decoration-underline">More details</a>
+      <button
+        class="btn-close btn-close-white position-absolute end-0 me-3"
+        data-bs-dismiss="offer-bar"
+      ></button>
+    </div>
+
+    <!-- Top Utility Bar -->
+    <div class="top-bar d-flex justify-content-between align-items-center">
+      <div>
+        <div class="dropdown d-inline me-2">
+          <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+            >English</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Urdu</a></li>
+            <li><a class="dropdown-item" href="#">Balti</a></li>
+            <li><a class="dropdown-item" href="#">Shina</a></li>
+          </ul>
+        </div>
+        <div class="dropdown d-inline">
+          <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">USD</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">PKR</a></li>
+            <li><a class="dropdown-item" href="#">EUR</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <span>Welcome User</span>
+        <div class="dropdown d-inline ms-2">
+          <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+            >My Account</a
+          >
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div
+      class="container py-3 d-flex justify-content-between align-items-center"
+    >
+      <!-- Logo -->
+      <h3 class="m-0 fw-bold">
+        <img src="./logo.png" style="width: 100px" alt="" />
+      </h3>
+
+      <!-- Search Box -->
+      <form class="d-flex search-box w-50">
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-secondary dropdown-toggle rounded-0"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            All Categories
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Clothing</a></li>
+            <li><a class="dropdown-item" href="#">Home</a></li>
+          </ul>
+        </div>
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Search Products..."
+        />
+        <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+
+      <!-- Icons -->
+      <div>
+        <a href="#" class="text-dark me-3 position-relative">
+          <i class="bi bi-heart"></i>
+          <span
+            class="badge bg-dark text-white rounded-circle position-absolute top-0 start-100 translate-middle p-1"
+            >3</span
+          >
+        </a>
+        <a href="#" class="text-dark position-relative">
+          <i class="bi bi-cart"></i>
+          <span
+            class="badge bg-dark text-white rounded-circle position-absolute top-0 start-100 translate-middle p-1"
+            >2</span
+          >
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-md">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav">
+            <!-- Home Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Home</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                <li><a class="dropdown-item" href="#">Home 3</a></li>
+                <li><a class="dropdown-item" href="#">Home 4</a></li>
+              </ul>
+            </li>
+
+            <!-- Mega Menu Trigger -->
+            <li class="nav-item dropdown position-static">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="megaMenu"
+                data-bs-toggle="dropdown"
+              >
+                <span class="text-warning fw-bold">NEW</span> Mega Menu
+              </a>
+              <div
+                class="dropdown-menu w-100 border-0 shadow p-4"
+                aria-labelledby="megaMenu"
+              >
+                <div class="container">
+                  <div class="row">
+                    <!-- Categories -->
+                    <div class="col-md-3">
+                      <h6 class="fw-bold mb-3">Categories</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Rings</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Earrings</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Crowns</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Necklace</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Bracelet</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Anklet</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Hairpin</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Bangle</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Departments -->
+                    <div class="col-md-3">
+                      <h6 class="fw-bold mb-3">Departments</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Fine Jewelry</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Bridal Jewelry</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Timeless Classics</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Men's Jewelry</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Women's Jewelry</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Baby Jewelry</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark d-block py-1"
+                            >Charitable Jewelry</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Other Links -->
+                    <div class="col-md-3">
+                      <h6 class="fw-bold mb-3 invisible">Links</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark fw-bold d-block py-1"
+                            >Shop Instagram</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark fw-bold d-block py-1"
+                            >Shop By Brands</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark fw-bold d-block py-1"
+                            >Repair & Cleaning</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-dark fw-bold d-block py-1"
+                            >Sell Your Jewellery</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Product Previews -->
+                    <div class="col-md-3">
+                      <div class="mb-3 position-relative">
+                        <span
+                          class="badge bg-danger position-absolute top-0 start-0 m-1"
+                          >SALE</span
+                        >
+                        <img
+                          src="./images/product_image_01.jpg"
+                          alt="Product"
+                          class="img-fluid border"
+                        />
+                        <div class="small mt-2 fw-semibold">
+                          Austrian Crystals Engagement Jewelry Ring
+                        </div>
+                      </div>
+                      <div class="position-relative">
+                        <span
+                          class="badge bg-primary position-absolute top-0 start-0 m-1"
+                          >NEW</span
+                        >
+                        <img
+                          src="./images/product_image_02.jpg"
+                          alt="Product"
+                          class="img-fluid border"
+                        />
+                        <div class="small mt-2 fw-semibold">
+                          Crystal Water Drop Wedding Function Earrings
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Shop Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Shop</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All Products</a></li>
+                <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+              </ul>
+            </li>
+
+            <!-- Product Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Product</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Single Product</a></li>
+                <li><a class="dropdown-item" href="#">Product Details</a></li>
+              </ul>
+            </li>
+
+            <!-- Pages Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Pages</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+
+    <nav style="--bs-breadcrumb-divider: '/'" aria-label="breadcrumb">
+      <ol class="breadcrumb bg-light px-3 py-2 shadow-sm">
+        <li class="breadcrumb-item">
+          <a href="#" class="text-decoration-none">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+      </ol>
+    </nav>
+
+    <div class="container my-4">
+      <h4 class="fw-bold">Shop Page</h4>
+
+      <div
+        class="filter-bar d-flex flex-wrap align-items-center justify-content-between"
+      >
+        <!-- Display Options -->
+        <div class="d-flex align-items-center me-3">
+          <span class="filter-label">Display</span>
+          <div class="display-icons">
+            <i class="fas fa-th-large"></i>
+            <i class="fas fa-list"></i>
+          </div>
+        </div>
+
+        <!-- Category -->
+        <div class="dropdown me-3">
+          <span class="filter-label">Category</span>
+          <button
+            class="btn btn-sm btn-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Necklace
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Bracelet</a></li>
+            <li><a class="dropdown-item" href="#">Earrings</a></li>
+            <li><a class="dropdown-item" href="#">Ring</a></li>
+          </ul>
+        </div>
+
+        <!-- Price -->
+        <div class="dropdown me-3">
+          <span class="filter-label">Price</span>
+          <button
+            class="btn btn-sm btn-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            $1001-$2500
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">$0-$1000</a></li>
+            <li><a class="dropdown-item" href="#">$2501-$5000</a></li>
+          </ul>
+        </div>
+
+        <!-- Size -->
+        <div class="dropdown me-3">
+          <span class="filter-label">Size</span>
+          <button
+            class="btn btn-sm btn-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Medium
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Small</a></li>
+            <li><a class="dropdown-item" href="#">Large</a></li>
+          </ul>
+        </div>
+
+        <!-- Sort by -->
+        <div class="dropdown me-3">
+          <span class="filter-label">Sort by</span>
+          <button
+            class="btn btn-sm btn-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Popular
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Newest</a></li>
+            <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+            <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+          </ul>
+        </div>
+
+        <!-- Items -->
+        <div class="dropdown me-3">
+          <span class="filter-label">Items</span>
+          <button
+            class="btn btn-sm btn-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            08
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">04</a></li>
+            <li><a class="dropdown-item" href="#">08</a></li>
+            <li><a class="dropdown-item" href="#">12</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Product Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card text-center">
+            <div class="product-image-wrapper">
+              <img
+                src="./images/product_image_01.jpg"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+            <div class="p-3">
+              <div class="product-category">Ring Collection</div>
+              <div class="product-title">
+                Austrian Crystals Wedding Jewelry Ring
+              </div>
+              <div class="text-dark fw-bold mt-1">$285</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SALE -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card text-center">
+            <span class="badge badge-sale">SALE</span>
+            <div class="product-image-wrapper">
+              <img
+                src="./images/product_image_02.jpg"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+            <div class="p-3">
+              <div class="product-category">Earrings</div>
+              <div class="product-title">
+                Crystal Water Drop Wedding Function Earrings
+              </div>
+              <div class="mt-1">
+                <span class="old-price">$450</span>
+                <span class="fw-bold text-dark">$285</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SALE -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card text-center">
+            <span class="badge badge-sale">SALE</span>
+            <div class="product-image-wrapper">
+              <img
+                src="./images/product_image_03.jpg"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+            <div class="p-3">
+              <div class="product-category">Ring Collection</div>
+              <div class="product-title">
+                Crystal Wedding And Engagement Function Rings
+              </div>
+              <div class="mt-1">
+                <span class="old-price">$120</span>
+                <span class="fw-bold text-dark">$85</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- No Badge -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card text-center">
+            <div class="product-image-wrapper">
+              <img
+                src="./images/product_image_04.jpg"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+            <div class="p-3">
+              <div class="product-category">Rings</div>
+              <div class="product-title">
+                Women Wedding Zircon Engagement Ring
+              </div>
+              <div class="text-dark fw-bold mt-1">$110</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SALE -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card text-center">
+            <div class="product-image-wrapper">
+              <img
+                src="./images/product_image_05.jpg"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+            <div class="p-3">
+              <div class="product-category">Bangle</div>
+              <div class="product-title">
+                Viennois Rose Gold Circle Bangle for Wedding
+              </div>
+              <div class="mt-1">
+                <span class="old-price">$220</span>
+                <span class="fw-bold text-dark">$185</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card text-center">
+            <span class="badge badge-new">NEW</span>
+            <div class="product-image-wrapper">
+              <img
+                src="./images/product_image_06.jpg"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+            <div class="p-3">
+              <div class="product-category">Bracelet</div>
+              <div class="product-title">
+                Bracelet Women Metal Chain for Engagement
+              </div>
+              <div class="mt-1">
+                <span class="old-price">$140</span>
+                <span class="fw-bold text-dark">$81</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FEATURED -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card text-center">
+            <span class="badge badge-featured">FEATURED</span>
+            <div class="product-image-wrapper">
+              <img
+                src="./images/product_image_07.jpg"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+            <div class="p-3">
+              <div class="product-category">Crown</div>
+              <div class="product-title">
+                Gold Rhinestone Pageant Crown for Women
+              </div>
+              <div class="mt-1">
+                <span class="old-price">$120</span>
+                <span class="fw-bold text-dark">$85</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card text-center">
+            <span class="badge badge-new">NEW</span>
+            <div class="product-image-wrapper">
+              <img
+                src="./images/product_image_08.jpg"
+                alt="product"
+                class="product-img"
+              />
+            </div>
+            <div class="p-3">
+              <div class="product-category">Necklace</div>
+              <div class="product-title">
+                Hollow Heart Pendant Necklace for Women
+              </div>
+              <div class="text-dark fw-bold mt-1">$85</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer: Showing results -->
+      <div class="d-flex justify-content-between align-items-center mt-4">
+        <div class="small text-muted">Showing 1–8 of 23 results.</div>
+        <nav>
+          <ul class="pagination pagination-sm mb-0">
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <footer class="bg-light pt-5">
+      <div class="container">
+        <!-- Newsletter -->
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <h5 class="fw-bold text-uppercase">
+              Sign up for newsletter & get all updates
+            </h5>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut
+              labore et.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Your Email ..."
+                required
+              />
+              <button class="btn btn-warning text-white fw-bold">
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Footer Content -->
+        <div class="row pt-4 pb-5">
+          <!-- Store Info -->
+          <div class="col-md-3 mb-4">
+            <h4 class="fw-bold">
+              <img src="./logo.png" style="width: 100px" alt="" /><span
+                class="text-dark"
+                >.</span
+              >
+            </h4>
+            <p>1223, Main Street, Anytown New York, 38000<br />USA</p>
+            <p>
+              888 - 963 - 600<br /><a
+                href="mailto:info@example.com"
+                class="text-decoration-none text-dark"
+                >info@example.com</a
+              >
+            </p>
+          </div>
+
+          <!-- Info -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Info</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Policies -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Our Policies</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-dark">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Refund Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- My Account -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">My Account</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Orders</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Shopping Cart</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Wishlist</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Network -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Social Network</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Instagram</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-dark">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="text-center py-3 border-top small">
+          © 2019 Company, Inc.
+          <a href="#" class="text-decoration-none text-dark">Privacy</a> •
+          <a href="#" class="text-decoration-none text-dark">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
