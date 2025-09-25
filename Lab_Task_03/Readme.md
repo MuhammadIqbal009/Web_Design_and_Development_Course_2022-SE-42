@@ -3,9 +3,8 @@
 ## Student Details
 
 - **Name:** Mohammad Iqbal  
-- **Registration Number:** [Your Reg. No Here]  
 - **Department:** Software Engineering  
-- **Semester:** 5th  
+- **Semester:** 6th  
 - **Course:** Web Design and Development  
 - **Instructor:** Engr,Awaiz Rathor
 
