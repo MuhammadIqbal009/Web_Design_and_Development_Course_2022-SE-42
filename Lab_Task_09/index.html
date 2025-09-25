@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="registrationForm">
+        <div class="form">
+            <label for="fname">First Name</label>
+            <input type="text" name="First_Name" id="fname">
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="Last_Name" id="lname">
+
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password">
+
+            <label for="password_confirm">Confirm Password</label>
+            <input type="password" name="Password_Confirm" id="password_confirm">
+
+            <label for="number">Phone Number</label>
+            <input type="tel" name="Phone_Number" id="number">
+
+            <!-- Error display -->
+            <div id="error" style="color:red; margin-top:10px;"></div>
+
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent form submission until validation passes
+
+            const fname = document.getElementById("fname").value.trim();
+            const lname = document.getElementById("lname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+            const passwordConfirm = document.getElementById("password_confirm").value;
+            const number = document.getElementById("number").value.trim();
+
+            const errorDiv = document.getElementById("error");
+            errorDiv.innerHTML = ""; // Clear previous errors
+
+            // Name validation (3 to 10 characters)
+            if (fname.length < 3 || fname.length > 10) {
+                return errorDiv.innerText = "First name must be between 3 and 10 characters.";
+            }
+
+            if (lname.length < 3 || lname.length > 10) {
+                return errorDiv.innerText = "Last name must be between 3 and 10 characters.";
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                return errorDiv.innerText = "Please enter a valid email address.";
+            }
+
+            // Password validation
+            const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            if (!passwordRegex.test(password)) {
+                return errorDiv.innerText = "Password must be at least 8 characters, include one uppercase letter, one digit, and one special character.";
+            }
+
+            // Confirm Password
+            if (password !== passwordConfirm) {
+                return errorDiv.innerText = "Passwords do not match.";
+            }
+
+            // Pakistani phone number validation
+            const phoneRegex = /^03[0-9]{9}$/;
+            if (!phoneRegex.test(number)) {
+                return errorDiv.innerText = "Phone number must be a valid Pakistani number starting with 03 and 11 digits long.";
+            }
+
+            // If all validations pass
+            alert("Form submitted successfully!");
+            // this.submit(); // Uncomment this line if you want to submit to a server
+        });
+    </script>
+</body>
+
+
+</html>
