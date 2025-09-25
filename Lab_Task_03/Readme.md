@@ -7,7 +7,7 @@
 - **Department:** Software Engineering  
 - **Semester:** 5th  
 - **Course:** Web Design and Development  
-- **Instructor:** [Engr,Awaiz Rathor]
+- **Instructor:** Engr,Awaiz Rathor
 
 ## Task Description
 
