@@ -7,5 +7,3 @@ In this task, I have created a **simple HTML page** listing different websites w
 
 You can view the live version here:  
 [Websites List Page Live Preview](https://raw.githack.com/MuhammadIqbal009/Web_Design_and_Development_Course_2022-SE-42/main/Lab_Task_02/Websides.html)
-
-
