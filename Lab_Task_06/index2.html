@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moving Ball Animation</title>
+    <style>
+            body {
+              display: flex;
+              height: 100vh;
+              background: #111;
+            }
+
+            .ball {
+              width: 200px;
+              height: 200px;
+              background: crimson;
+              border-radius: 50%; /* Circle */
+              animation: moveBall 6s infinite linear;
+            }
+
+            @keyframes moveBall {
+        0% {
+          transform: translateX(0) translateY(0);
+          border-radius: 0%;
+          background: rgb(33, 20, 220);
+        }
+        25% {
+          transform: translateX(900px) translateY(0);
+          border-radius: 50%;
+          background: rgb(255, 0, 0);
+        }
+        50% {
+          transform: translateX(900px) translateY(600px);  */
+          border-radius: 35%;
+          background: limegreen;
+        }
+        75% {
+          transform: translateX(0) translateY(600px);
+          border-radius: 15%;
+          background: deepskyblue;
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+          border-radius: 0%;
+          background: crimson;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+  </body>
+</html>
