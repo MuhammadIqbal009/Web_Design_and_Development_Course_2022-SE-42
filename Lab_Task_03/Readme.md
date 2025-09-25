@@ -41,4 +41,3 @@ This lab task involved designing and developing a basic **HTML webpage** as part
 ## Conclusion
 
 This task helped in understanding the structure of a standard HTML document and the use of basic tags for layout and formatting. It also provided hands-on experience in organizing content meaningfully on a web page.
-
