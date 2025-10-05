@@ -1,0 +1,89 @@
+/* ===============================
+   RESPONSIVE SIDEBAR & MINI POSTS
+================================= */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .sidebar {
+        padding: 1rem;
+    }
+
+    .mini-post {
+        gap: 8px;
+        padding: 0.5rem;
+    }
+
+    .mini-post img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mini-post-content h4 {
+        font-size: 0.8rem;
+    }
+
+    .mini-post-content small {
+        font-size: 0.7rem;
+    }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+
+    /* Sidebar moves below posts */
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .sidebar h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .mini-post {
+        flex-direction: row;
+        align-items: center;
+        padding: 0.6rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .mini-post img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .mini-post-content h4 {
+        font-size: 0.78rem;
+    }
+
+    .mini-post-content small {
+        font-size: 0.68rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .mini-post {
+        padding: 0.4rem;
+        gap: 6px;
+    }
+
+    .mini-post img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mini-post-content h4 {
+        font-size: 0.75rem;
+    }
+
+    .mini-post-content small {
+        font-size: 0.65rem;
+    }
+}
