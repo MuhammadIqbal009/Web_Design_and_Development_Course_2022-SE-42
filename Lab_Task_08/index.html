@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Blog</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="./Styles/style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="logo" title="Enhanced Mini Blog">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2L3 7v6c0 5 4 9 9 9s9-4 9-9V7l-9-5z"></path></svg>
+        <span>MiniBlog</span>
+      </div>
+
+      <form id="searchForm" class="search-form" role="search" aria-label="Search posts">
+        <input id="q" type="search" placeholder="Search title, body or tag…" />
+        <button type="submit" title="Search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <button id="toggleTheme" class="theme-btn" aria-pressed="false" title="Toggle theme">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <div id="newsletterBanner" class="newsletter-banner" role="region" aria-label="Newsletter">
+    <div class="nb-left">
+      <strong>Get weekly highlights</strong>
+      <span>Join the list for short updates.</span>
+    </div>
+    <div class="nb-right">
+      <input id="nbEmail" type="email" placeholder="your@email.com" />
+      <button id="nbSubscribe">Subscribe</button>
+      <button id="nbClose" class="nb-close" aria-label="Close newsletter">&times;</button>
+    </div>
+  </div>
+
+  <main class="layout" role="main">
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="card small-card">
+        <h3>Categories</h3>
+        <ul id="cats">
+          <li data-cat="all" class="active">All</li>
+          <li data-cat="dev">Development</li>
+          <li data-cat="ux">UX</li>
+          <li data-cat="travel">Travel</li>
+          <li data-cat="life">Lifestyle</li>
+        </ul>
+      </div>
+
+      <div class="card small-card">
+        <h3>Featured Authors</h3>
+        <div id="authorsList" class="mini-list" aria-live="polite">
+          </div>
+      </div>
+      
+      </aside>
+
+    <section class="feed" aria-label="Posts feed">
+      <div id="grid" class="grid"></div>
+
+      <div class="pager">
+        <button id="prev">Prev</button>
+        <span id="pageInfo">Page 1</span>
+        <button id="next">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="detailDrawer" class="detail-drawer-wrap" aria-hidden="true">
+    <div class="detail-drawer" role="dialog" aria-modal="true">
+      <button id="drawerClose" class="drawer-close" aria-label="Close post detail">&times;</button>
+      <img id="drawerImg" class="drawer-media" alt="Post image" />
+      <div class="drawer-content">
+        <div class="drawer-meta">
+           <span id="drawerAuthor" class="author-link"></span>
+          <p class="meta"><span id="drawerTag" class="tag"></span> • Post #<span id="drawerId"></span></p>
+        </div>
+        <h2 id="drawerTitle"></h2>
+        <div id="drawerText" class="drawer-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <small>&copy; Mini Blog • Made for Learning</small>
+  </footer>
+
+  <script src="./Scripts/script.js" defer></script>
+</body>
+</html>
