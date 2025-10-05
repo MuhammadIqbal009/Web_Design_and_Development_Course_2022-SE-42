@@ -2,7 +2,6 @@
 Web Design & Development Course – SE-42  
 
 ## 🔗 Live Preview  
-*(Add your live preview URL here, e.g.)*  
 [View Project](https://muhammadiqbal009.github.io/Web_Design_and_Development_Course_2022-SE-42/Lab_Task_08/)
 
 ## 📄 Project Overview  
