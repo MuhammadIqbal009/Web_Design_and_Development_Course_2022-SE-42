@@ -145,6 +145,3 @@ This project is developed for **educational purposes** as part of the *Web Devel
 All external **APIs and assets belong to their respective owners**.
 
 ---
-
-
-
