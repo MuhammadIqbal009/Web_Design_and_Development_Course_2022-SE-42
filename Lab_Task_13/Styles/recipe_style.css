@@ -1,0 +1,362 @@
+html, body {
+  height: 100%;
+
+}
+
+/* GENERAL */
+body {
+  font-family: 'Quicksand', 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #fce4ec);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLASS EFFECT */
+.glass-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* HERO / SEARCH */
+.search-section {
+  padding: 5rem 1rem 4rem;
+  text-align: center;
+}
+
+.search-section h1 {
+  font-weight: 700;
+  color: #333;
+}
+
+/* CARDS */
+.meal-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.meal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.meal-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* CATEGORY BUTTONS */
+.category-btn {
+  padding: 0.7rem 1.3rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.category-btn:hover {
+  background: rgba(0, 123, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* --- FINAL RECIPE MODAL (Hover Scroll Only) --- */
+.modal-dialog {
+  max-width: 1000px;
+}
+
+.modal-content {
+  border-radius: 18px;
+  border: none;
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.modal-header {
+  border: none;
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #222;
+}
+
+.modal-body {
+  padding: 1rem 1.5rem;
+  max-height: 78vh;
+}
+
+/* Image */
+.modal-body img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* INGREDIENTS */
+#mealIngredients {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: none; /* hide scrollbar (Firefox) */
+}
+
+/* INSTRUCTIONS */
+#mealInstructions {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 0.8rem;
+  scrollbar-width: none; /* hide scrollbar (Firefox) */
+}
+
+/* Hide scrollbar by default */
+/* -------------------------------
+   FINAL RECIPE MODAL SCROLL STYLE
+---------------------------------*/
+
+/* Ingredients + Instructions base */
+#mealIngredients,
+#mealInstructions {
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox: hide by default */
+  -ms-overflow-style: none; /* IE/Edge */
+  transition: all 0.3s ease;
+}
+
+/* Hide scrollbar initially for WebKit browsers */
+#mealIngredients::-webkit-scrollbar,
+#mealInstructions::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Show scrollbar on hover */
+#mealIngredients:hover::-webkit-scrollbar,
+#mealInstructions:hover::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar track (visible on hover) */
+#mealIngredients:hover::-webkit-scrollbar-track,
+#mealInstructions:hover::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.05);
+}
+
+/* Scrollbar thumb (visible on hover) */
+#mealIngredients:hover::-webkit-scrollbar-thumb,
+#mealInstructions:hover::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(129, 212, 250, 0.8), rgba(224, 247, 250, 0.9));
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Thumb hover glow effect */
+#mealIngredients:hover::-webkit-scrollbar-thumb:hover,
+#mealInstructions:hover::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(100,181,246,1), rgba(128,222,234,1));
+  transform: scaleX(1.1);
+}
+
+/* Firefox hover fallback */
+#mealIngredients:hover,
+#mealInstructions:hover {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(129,212,250,0.8) rgba(255,255,255,0.3);
+}
+
+/* Adjust spacing so content doesn’t jump */
+#mealIngredients, #mealInstructions {
+  padding-right: 8px;
+}
+
+/* Video Button */
+#mealVideo a {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #ff3d3d;
+  color: #fff;
+  padding: 0.55rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 8px rgba(255, 61, 61, 0.4);
+}
+#mealVideo a:hover {
+  background: #e22d2d;
+  transform: scale(1.05);
+}
+
+/* Video Button */
+#mealVideo a {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #ff3d3d;
+  color: #fff;
+  padding: 0.55rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 8px rgba(255, 61, 61, 0.4);
+}
+#mealVideo a:hover {
+  background: #e22d2d;
+  transform: scale(1.05);
+}
+
+
+/* Footer Styling */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  color: #333;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  margin-top: auto;
+}
+
+/* =============================
+     LOADING OVERLAY & SPINNER
+   ============================= */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(0, 123, 255, 0.2);
+  border-top: 6px solid rgba(0, 123, 255, 0.8);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  margin-top: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 3px rgba(255,255,255,0.6);
+}
+
+/* Fade transitions */
+.loader-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.loader-overlay.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.page-wrapper {
+  min-height: 100vh;        
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex: 1;                  
+}
+
+/* =========================
+   THREE DOT LOADING ANIMATION
+========================= */
+.dot-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+}
+
+.dot-loader span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #64b5f6, #80deea);
+  opacity: 0.6;
+  animation: dotPulse 1.4s infinite ease-in-out;
+}
+
+.dot-loader span:nth-child(1) {
+  animation-delay: 0s;
+}
+.dot-loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot-loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dotPulse {
+  0%, 80%, 100% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+#categoryError {
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,0 +1,163 @@
+/* ==== GLOBAL ==== */
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family: "Poppins", sans-serif;
+  color: #f8f9fa;
+}
+
+/* ==== GLASSMORPHIC CARD ==== */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f1f1f1;
+}
+
+/* ==== HEADINGS ==== */
+.text-gradient {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2, h3 {
+  font-weight: 700;
+}
+
+/* ==== CATEGORY & DIFFICULTY BOXES ==== */
+.option-box {
+  width: 160px;
+  height: 160px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f1f1f1;
+}
+.option-box img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+.option-box:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ==== QUIZ QUESTION ==== */
+.question-box {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #283e51, #485563);
+  color: #f1f1f1;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+}
+
+/* ==== ANSWERS ==== */
+.answers {
+  margin-top: 20px;
+}
+.answer-btn {
+  margin: 12px auto;
+  padding: 15px;
+  border-radius: 15px;
+  color: #f1f1f1;
+  font-weight: 600;
+  cursor: pointer;
+  width: 85%;
+  transition: all 0.25s ease-in-out;
+  text-align: left;
+  padding-left: 20px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+}
+
+.answer-btn{ background: #008891; } 
+
+.answer-btn:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+.answer-btn.disabled { pointer-events: none; opacity: 0.8; }
+.answer-btn.correct { background: #28a745 !important; color: #fff; }
+.answer-btn.wrong { background: #dc3545 !important; color: #fff; }
+
+/* ==== PROGRESS BAR ==== */
+.progress {
+  height: 12px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.2);
+}
+.progress-bar {
+  border-radius: 20px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+/* ==== RESULT ==== */
+.animated-emoji {
+  font-size: 4rem;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ==== BUTTONS ==== */
+.custom-btn {
+  display: block;       
+  margin: 10px auto;    
+  width: 200px;     
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.05rem;
+  border-radius: 25px !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.custom-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+/* Color overrides */
+.btn-success.custom-btn { background: #28a745; border: none; }
+.btn-danger.custom-btn  { background: #d62828; border: none; }
+.btn-info.custom-btn    { background: #0096c7; border: none; }
+.btn-primary.custom-btn { background: #0077b6; border: none; }
+
+/* Difficulty Labels */
+.difficulty-label {
+  font-size: 1.2rem;  
+  font-weight: 600;   
+}
+
+.logo_title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.change{
+  color: aqua !important;
+}
+
+#loading {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
